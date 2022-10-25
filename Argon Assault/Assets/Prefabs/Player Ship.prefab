@@ -1136,6 +1136,7 @@ GameObject:
   - component: {fileID: 7434882658326487108}
   - component: {fileID: 7446909924651020786}
   - component: {fileID: 7454765172652235236}
+  - component: {fileID: 5727467154241376239}
   m_Layer: 0
   m_Name: Player Ship
   m_TagString: Untagged
@@ -1209,6 +1210,67 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5727467154241376239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7432842524282510936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82e4fda4840e8cc47840488c8e110b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement:
+    m_Name: Movement
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 7e0d11c4-3fb7-456b-b57c-f6894c966c69
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 2D Vector
+      m_Id: b40f86d2-8485-4ab2-8be0-54ae81e45347
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 4
+    - m_Name: up
+      m_Id: cd3b5912-ae3d-4fab-9d27-293fb0a2406f
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: down
+      m_Id: a11394d9-7b4d-4f0d-b274-998026219928
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 2127d773-1482-4294-8454-a35a9471205b
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 70a90872-3221-4ca2-8c6f-427bbe50008b
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    m_Flags: 0
 --- !u!1 &7817875053491581519
 GameObject:
   m_ObjectHideFlags: 0
