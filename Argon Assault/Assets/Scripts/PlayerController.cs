@@ -26,10 +26,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float horizontalStrafe = movement.ReadValue<Vector2>().x;
-        float verticalStrafe = movement.ReadValue<Vector2>().y;
+        float xStrafe = movement.ReadValue<Vector2>().x;
+        float yStrafe = movement.ReadValue<Vector2>().y;
 
-        Debug.Log(horizontalStrafe);
-        Debug.Log(verticalStrafe);
+        float xOffset = 0.1f;
+        float newXPos = transform.localPosition.x + xOffset;
+
+        transform.localPosition = new Vector3(newXPos, transform.localPosition.y, transform.localPosition.z);
+
     }
 }
