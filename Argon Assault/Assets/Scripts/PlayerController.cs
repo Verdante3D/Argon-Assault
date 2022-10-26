@@ -28,6 +28,12 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        ProcessTranslation();
+        ProcessRotation();
+    }
+
+    private void ProcessTranslation()
+    {
         float xStrafe = movement.ReadValue<Vector2>().x;
         float yStrafe = movement.ReadValue<Vector2>().y;
 
@@ -40,6 +46,10 @@ public class PlayerController : MonoBehaviour
         float clampedYPos = Mathf.Clamp(rawYPos, -yRange, yRange);
 
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
+    }
 
+    void ProcessRotation()
+    {
+        transform.localRotation = Quaternion.Euler(-30f, 30f, 0f);
     }
 }
