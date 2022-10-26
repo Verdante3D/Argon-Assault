@@ -5,12 +5,13 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] float xStrafeSpeed = 10f;
+    [SerializeField] float yStrafeSpeed = 10f;
     [SerializeField] InputAction movement;
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     private void OnEnable()
@@ -23,16 +24,18 @@ public class PlayerController : MonoBehaviour
         movement.Disable();
     }
 
-    // Update is called once per frame
     void Update()
     {
         float xStrafe = movement.ReadValue<Vector2>().x;
         float yStrafe = movement.ReadValue<Vector2>().y;
 
-        float xOffset = 0.1f;
+        float xOffset = xStrafe * Time.deltaTime * xStrafeSpeed;
         float newXPos = transform.localPosition.x + xOffset;
 
-        transform.localPosition = new Vector3(newXPos, transform.localPosition.y, transform.localPosition.z);
+        float yOffset = yStrafe * Time.deltaTime * yStrafeSpeed;
+        float newYPos = transform.localPosition.y + yOffset;
+
+        transform.localPosition = new Vector3(newXPos, newYPos, transform.localPosition.z);
 
     }
 }
