@@ -11,6 +11,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float yRange = 10f;
     [SerializeField] InputAction movement;
 
+    [SerializeField] float positionPitchFactor = -2f;
+    [SerializeField] float controlPitchFactor = -15f;
+    [SerializeField] float positionYawFactor = 2f;
+    [SerializeField] float controlRollFactor = -20f;
+
+    float xStrafe;
+    float yStrafe;
+
     void Start()
     {
 
@@ -34,8 +42,8 @@ public class PlayerController : MonoBehaviour
 
     private void ProcessTranslation()
     {
-        float xStrafe = movement.ReadValue<Vector2>().x;
-        float yStrafe = movement.ReadValue<Vector2>().y;
+        xStrafe = movement.ReadValue<Vector2>().x;
+        yStrafe = movement.ReadValue<Vector2>().y;
 
         float xOffset = xStrafe * Time.deltaTime * xStrafeSpeed;
         float rawXPos = transform.localPosition.x + xOffset;
@@ -50,6 +58,13 @@ public class PlayerController : MonoBehaviour
 
     void ProcessRotation()
     {
-        transform.localRotation = Quaternion.Euler(-30f, 30f, 0f);
+        float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
+        float pitchDueToControlThrow = yStrafe * controlPitchFactor;
+
+        float pitch = pitchDueToPosition + pitchDueToControlThrow;
+        float yaw = transform.localPosition.x * positionYawFactor;
+        float roll = xStrafe * controlRollFactor;
+
+        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 }
