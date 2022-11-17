@@ -413,6 +413,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Rig
       objectReference: {fileID: 0}
+    - target: {fileID: 2472618157588462360, guid: 793083cffd01afe48839f57ae1652a82, type: 3}
+      propertyPath: firing.m_Id
+      value: d62053b5-d08d-42b6-a9a9-a179890ea2fe
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472618157588462360, guid: 793083cffd01afe48839f57ae1652a82, type: 3}
+      propertyPath: firing.m_Name
+      value: Firing
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472618157588462360, guid: 793083cffd01afe48839f57ae1652a82, type: 3}
+      propertyPath: firing.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472618157588462360, guid: 793083cffd01afe48839f57ae1652a82, type: 3}
+      propertyPath: firing.m_SingletonActionBindings.Array.data[0].m_Id
+      value: dcb90381-c488-4683-8b6a-389dbade67fb
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472618157588462360, guid: 793083cffd01afe48839f57ae1652a82, type: 3}
+      propertyPath: firing.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/space
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472618157588462360, guid: 793083cffd01afe48839f57ae1652a82, type: 3}
+      propertyPath: firing.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Firing
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 793083cffd01afe48839f57ae1652a82, type: 3}
 --- !u!1001 &1458191250572598326

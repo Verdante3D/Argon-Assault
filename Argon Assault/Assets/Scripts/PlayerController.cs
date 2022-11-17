@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float xRange = 10f;
     [SerializeField] float yRange = 10f;
     [SerializeField] InputAction movement;
+    [SerializeField] InputAction firing;
 
     [SerializeField] float positionPitchFactor = -2f;
     [SerializeField] float controlPitchFactor = -15f;
@@ -27,17 +28,20 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         movement.Enable();
+        firing.Enable();
     }
 
     private void OnDisable()
     {
         movement.Disable();
+        firing.Disable();
     }
 
     void Update()
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
     }
 
     private void ProcessTranslation()
@@ -66,5 +70,13 @@ public class PlayerController : MonoBehaviour
         float roll = xStrafe * controlRollFactor;
 
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
+
+    void ProcessFiring()
+    {
+        if (firing.triggered)
+        {
+            Debug.Log("Firing!");
+        }
     }
 }
