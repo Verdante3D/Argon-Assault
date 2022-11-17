@@ -161,7 +161,15 @@ MonoBehaviour:
     m_Id: 4971d3b5-189b-426e-aa3f-9c0d583b41d7
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 8a3a9857-5767-4136-9e88-1c16dc918d1c
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Firing
+      m_Flags: 0
     m_Flags: 0
   lasers: []
   positionPitchFactor: -2
