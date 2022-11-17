@@ -6,17 +6,25 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float xStrafeSpeed = 10f;
-    [SerializeField] float yStrafeSpeed = 10f;
-    [SerializeField] float xRange = 10f;
-    [SerializeField] float yRange = 10f;
-    [SerializeField] InputAction movement;
-    [SerializeField] InputAction firing;
-    [SerializeField] GameObject[] lasers;
+    [Header("General Setup Settings")]
+    [Tooltip("How fast ship moves horizontally based on player input")][SerializeField] float xStrafeSpeed = 10f;
+    [Tooltip("How fast ship moves vertically based on player input")][SerializeField] float yStrafeSpeed = 10f;
+    [Tooltip("How far player moves horizontally")][SerializeField] float xRange = 10f;
+    [Tooltip("How far player moves vertically")][SerializeField] float yRange = 10f;
 
+    [Header("Input system")]
+    [Tooltip("Map movement keys")][SerializeField] InputAction movement;
+    [Tooltip("Map firing keys")][SerializeField] InputAction firing;
+
+    [Header("Laser gun array")]
+    [Tooltip("Add all player lasers here")][SerializeField] GameObject[] lasers;
+
+    [Header("Screen position based tuning")]
     [SerializeField] float positionPitchFactor = -2f;
-    [SerializeField] float controlPitchFactor = -15f;
     [SerializeField] float positionYawFactor = 2f;
+
+    [Header("Player input based tuning")]
+    [SerializeField] float controlPitchFactor = -15f;
     [SerializeField] float controlRollFactor = -20f;
 
     float xStrafe;
@@ -89,7 +97,7 @@ public class PlayerController : MonoBehaviour
     {
         foreach (GameObject laser in lasers)
         {
-            var emissionModule  = laser.GetComponent<ParticleSystem>().emission;
+            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
             emissionModule.enabled = isActive;
         }
     }
