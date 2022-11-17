@@ -123,6 +123,16 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &326864944 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5449936287639640427, guid: 793083cffd01afe48839f57ae1652a82, type: 3}
+  m_PrefabInstance: {fileID: 724067112623196534}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &655768024 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9151264782472703323, guid: 793083cffd01afe48839f57ae1652a82, type: 3}
+  m_PrefabInstance: {fileID: 724067112623196534}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &693000689
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,6 +431,18 @@ PrefabInstance:
       propertyPath: firing.m_Name
       value: Firing
       objectReference: {fileID: 0}
+    - target: {fileID: 2472618157588462360, guid: 793083cffd01afe48839f57ae1652a82, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472618157588462360, guid: 793083cffd01afe48839f57ae1652a82, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 326864944}
+    - target: {fileID: 2472618157588462360, guid: 793083cffd01afe48839f57ae1652a82, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 655768024}
     - target: {fileID: 2472618157588462360, guid: 793083cffd01afe48839f57ae1652a82, type: 3}
       propertyPath: firing.m_SingletonActionBindings.Array.size
       value: 1
