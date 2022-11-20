@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8438333231772064192}
   - component: {fileID: 8438333231772064193}
   m_Layer: 0
-  m_Name: Explosion VFX
+  m_Name: Player Explosion VFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8438333231772064198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 384.7388, y: -18.082825, z: 208.22836}
-  m_LocalScale: {x: 2.0143895, y: 2.0143895, z: 2.0143895}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

@@ -145,38 +145,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 724067111077117206}
     m_Modifications:
-    - target: {fileID: 5727467154241376239, guid: ea321fd10e15d9b4eb05899d9e805699, type: 3}
-      propertyPath: firing.m_Id
-      value: d62053b5-d08d-42b6-a9a9-a179890ea2fe
-      objectReference: {fileID: 0}
-    - target: {fileID: 5727467154241376239, guid: ea321fd10e15d9b4eb05899d9e805699, type: 3}
-      propertyPath: lasers.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5727467154241376239, guid: ea321fd10e15d9b4eb05899d9e805699, type: 3}
-      propertyPath: lasers.Array.data[0]
-      value: 
-      objectReference: {fileID: 5449936287639640427}
-    - target: {fileID: 5727467154241376239, guid: ea321fd10e15d9b4eb05899d9e805699, type: 3}
-      propertyPath: lasers.Array.data[1]
-      value: 
-      objectReference: {fileID: 9151264782472703323}
-    - target: {fileID: 5727467154241376239, guid: ea321fd10e15d9b4eb05899d9e805699, type: 3}
-      propertyPath: firing.m_SingletonActionBindings.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5727467154241376239, guid: ea321fd10e15d9b4eb05899d9e805699, type: 3}
-      propertyPath: firing.m_SingletonActionBindings.Array.data[0].m_Id
-      value: dcb90381-c488-4683-8b6a-389dbade67fb
-      objectReference: {fileID: 0}
-    - target: {fileID: 5727467154241376239, guid: ea321fd10e15d9b4eb05899d9e805699, type: 3}
-      propertyPath: firing.m_SingletonActionBindings.Array.data[0].m_Path
-      value: <Keyboard>/space
-      objectReference: {fileID: 0}
-    - target: {fileID: 5727467154241376239, guid: ea321fd10e15d9b4eb05899d9e805699, type: 3}
-      propertyPath: firing.m_SingletonActionBindings.Array.data[0].m_Action
-      value: Firing
-      objectReference: {fileID: 0}
     - target: {fileID: 7432842524282510936, guid: ea321fd10e15d9b4eb05899d9e805699, type: 3}
       propertyPath: m_Name
       value: Player Ship
@@ -230,15 +198,5 @@ PrefabInstance:
 --- !u!4 &721295536232649907 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7434882658326487108, guid: ea321fd10e15d9b4eb05899d9e805699, type: 3}
-  m_PrefabInstance: {fileID: 7866816671526941943}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5449936287639640427 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2778329787054058908, guid: ea321fd10e15d9b4eb05899d9e805699, type: 3}
-  m_PrefabInstance: {fileID: 7866816671526941943}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &9151264782472703323 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1428589688480340396, guid: ea321fd10e15d9b4eb05899d9e805699, type: 3}
   m_PrefabInstance: {fileID: 7866816671526941943}
   m_PrefabAsset: {fileID: 0}
