@@ -822,6 +822,7 @@ GameObject:
   - component: {fileID: 4479974127918717953}
   - component: {fileID: 4471464324346525645}
   - component: {fileID: 5868017462527024819}
+  - component: {fileID: 1040861095}
   m_Layer: 0
   m_Name: Viper
   m_TagString: Untagged
@@ -909,9 +910,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 8438333231772064198, guid: 1b068b3ef1c30fa40946e6d13a1f6ad8, type: 3}
   hitVFX: {fileID: 8438333231772064198, guid: ef30a73d3b977094fa642851a3d5008a, type: 3}
-  parent: {fileID: 0}
   scorePerHit: 60
   hitpoints: 2
+--- !u!95 &1040861095
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4493620517610655871}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4600137464595040272
 GameObject:
   m_ObjectHideFlags: 0
