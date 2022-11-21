@@ -194,6 +194,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1185292093, guid: a522a87df2947ec44bf76838df1d08a2, type: 3}
+      propertyPath: hitVFX
+      value: 
+      objectReference: {fileID: 8438333231772064198, guid: ef30a73d3b977094fa642851a3d5008a, type: 3}
+    - target: {fileID: 1185292093, guid: a522a87df2947ec44bf76838df1d08a2, type: 3}
       propertyPath: parent
       value: 
       objectReference: {fileID: 1120636224}
